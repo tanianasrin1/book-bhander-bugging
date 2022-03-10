@@ -88,7 +88,7 @@ const showBooks = (books) => {
 };
 
 const createCard = (book) => {
-  console.log(book)
+  // console.log(book)
   const div = document.createElement("div");
   div.classList.add("card");
 
@@ -148,7 +148,7 @@ const displayWishlist = () => {
   const wishlist = getWishlistItems();
   console.log(wishlist);
 
-  bookList.forEach((book) => {
+  wishlist.forEach((book) => {
     const div = createCard(book);
     document.getElementById("wishlist").appendChild(div);
   });
